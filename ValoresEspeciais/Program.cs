@@ -86,8 +86,12 @@ namespace ValoresEspeciais
 
             uint ui = uint.MaxValue;
 
-         
+            float f = float.MaxValue;
+
             Console.WriteLine(ui +1);
+            
+            Console.WriteLine(2 * f);
+            Console.WriteLine(f +1);
 
             
 
