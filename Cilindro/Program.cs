@@ -19,9 +19,13 @@ namespace Cilindro
             
             float v = MathF.PI * MathF.Pow(r, 2) * a;
 
+            float s = 2*MathF.PI * r*(r+ a);
 
-            Console.Write("Volume do Cilindro em cm3: ");
+
+            Console.WriteLine("Volume do Cilindro em cm3: ");
             Console.WriteLine(v);
+            Console.WriteLine("Área do Cilindro em cm2: ");
+            Console.WriteLine(s);
 
 
             
