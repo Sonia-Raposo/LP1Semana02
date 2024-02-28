@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ValoresEspeciais
 {
@@ -57,6 +58,29 @@ namespace ValoresEspeciais
 
             Console.WriteLine(ul_min);
             Console.WriteLine(ul_max);
+
+
+            //Special Values to less infinity, plus infinity and NaN
+            double d_neg = double.NegativeInfinity;
+            double d_pos = double.PositiveInfinity;
+
+            float f_neg = float.NegativeInfinity;
+            float f_pos = float.PositiveInfinity;
+
+            float f_nan_pos = float.NaN;
+            double d_nan_pos = double.NaN;
+            
+
+            //print the special values above
+            Console.WriteLine(d_neg);
+            Console.WriteLine(d_pos);
+
+            Console.WriteLine(f_neg);
+            Console.WriteLine(f_pos);
+
+            Console.WriteLine(f_nan_pos);
+            Console.WriteLine(d_nan_pos);
+            
 
 
         }
