@@ -82,17 +82,22 @@ namespace ValoresEspeciais
             Console.WriteLine(d_nan_pos);
             
 
-            //Overflow
-
+           
             uint ui = uint.MaxValue;
-
             float f = float.MaxValue;
 
+
+            //Overflow of uint and float
+
             Console.WriteLine(ui +1);
-            
+
             Console.WriteLine(2 * f);
             Console.WriteLine(f +1);
 
+
+            //Underflow of float
+
+            Console.WriteLine(f - 0.00001f);
             
 
         }
