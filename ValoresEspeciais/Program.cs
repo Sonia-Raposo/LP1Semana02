@@ -82,6 +82,14 @@ namespace ValoresEspeciais
             Console.WriteLine(d_nan_pos);
             
 
+            //Overflow
+
+            uint ui = uint.MaxValue;
+
+         
+            Console.WriteLine(ui +1);
+
+            
 
         }
     }
