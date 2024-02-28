@@ -18,7 +18,7 @@ namespace BreakContinue
                     break;
                 }
 
-                // Skips current cycle if current turn is divisible by 3
+                // Skips current cycle if current turn is divisible by 3 or 10
                 if (turn % 3 == 0 || turn % 10 == 0)
                 {
                     continue;
