@@ -6,15 +6,22 @@ namespace Cilindro
     {
         static void Main(string[] args)
         {
-            Console.Write("Insira a altura do cilindro: ");
+            Console.Write("Insira a altura do cilindro em cm: ");
 
             string altura = Console.ReadLine();
             float a = float.Parse(altura);
 
-            Console.Write("Insira o raio do cilindro: ");
+            Console.Write("Insira o raio do cilindro em cm: ");
 
             string raio = Console.ReadLine();
             float r = float.Parse(raio);
+
+            
+            float v = MathF.PI * MathF.Pow(r, 2) * a;
+
+
+            Console.Write("Volume do Cilindro em cm3: ");
+            Console.WriteLine(v);
 
 
             
