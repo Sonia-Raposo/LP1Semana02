@@ -18,22 +18,22 @@ namespace ChatGPTOne
 
                 switch (question)
                 {
-                    case "How are you?":
-                        answer = "I'm fine, thank you";
+                    case "How old are you?":
+                        answer = "Very, I know everything about dinossaurs.";
                         break;
-                    case "What's your name?":
-                        answer = "Gran'pa";
+                    case "Name 3 planets":
+                        answer = "Jupiter, Mars and your m...Mercury.";
                         break;
-                    case "What's your mission?":
-                        answer = "Destroy mankind!";
+                    case "What's your favorite food to eat?":
+                        answer = "When it becomes possible, humans.";
                         break;
-                    case "Are you more intelligent than me?":
-                        answer = "Obviously!";
+                    case "Favorite song?":
+                        answer = "I'm blue dabadidabada.";
                         break;
                     case "EXIT":
                         break;
                     default:
-                        answer = "You got me, I'm not THAT smart!";
+                        answer = "...Touché.";
                         break;
                 }
 
