@@ -37,7 +37,8 @@ namespace ChatGPTOne
                         break;
                 }
 
-                Console.WriteLine(answer);
+                if (question != "EXIT")
+                    Console.WriteLine(answer);
 
 
             } while (question != "EXIT");                    
