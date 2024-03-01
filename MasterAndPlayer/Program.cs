@@ -7,38 +7,56 @@ namespace ChatGPTOne
     {
         static void Main(string[] args)
         {
-            string question;
+
+            Console.Write("Number Master insert number: ");
+            string number_master  = Console.ReadLine();
+
+            int n = int.Parse(number_master);
 
 
-            do
+            if (n < 0 || n > 100)
+            {
+                Console.WriteLine("Invalid number!");
+                return;
+            }
+            
+            else
             {
 
-                Console.Write("Number Master insert number: ");
-                string answer  = Console.ReadLine();
-
-                int n = int.Parse(answer);
-
-
-                if (n < 0 || n > 100)
+                for (int x = 1 ; x <= 100; x++)
                 {
-                    Console.WriteLine("Invalid number!");
-                    break;
+                    Console.WriteLine("");
                 }
-                
-                else
-                {
-                    string line = "";
-
-                    for (int x = 0 ; x == 100; x++)
+                    while (true)
                     {
-                        Console.WriteLine(line);
+                        Console.Write("Player insert number: ");
+                        string player  = Console.ReadLine();
+
+                        int i = int.Parse(player);
+
+                        while (i < 0 || i > 100)
+                        {
+                            Console.WriteLine("Invalid number! Try again!");
+                        }
+
+                        if (n < i)
+                        {
+                            Console.WriteLine($"The correct number is Lower than {i}");
+                        }
+
+                        else if (n > i)
+                        {
+                            Console.WriteLine($"The correct number is higher than {i}");
+                        }
+
+                        else
+                        {
+                            Console.WriteLine("Player wins!");
+                            break;
+                        }
                     }
-
-                    
-                }
-
-
-            } while (true);                    
+                
+            }        
                 
         }
            
